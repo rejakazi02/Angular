@@ -24,8 +24,17 @@ export class CoursesComponent {
 title = " List of courses";
 courses;
 
-constructor() {
-  let service = new CoursesService();
+// fast away
+
+// constructor() {
+//   let service = new CoursesService();
+//   this.courses = service.getCourses();
+// }
+
+// 2nd AWAY  .
+
+constructor(service: CoursesService) {
+
   this.courses = service.getCourses();
 }
 
