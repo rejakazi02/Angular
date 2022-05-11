@@ -17,6 +17,10 @@ import { CoursesService } from "./courses.service";
   </li>
 
   </ul>
+
+
+  <img src="{{ imageUrl }}" style="width: 300px;" />
+  <img [src]="title" />
   `
 })
 
@@ -37,5 +41,9 @@ constructor(service: CoursesService) {
 
   this.courses = service.getCourses();
 }
+
+
+
+imageUrl = "https://picsum.photos/seed/picsum/200/300";
 
 }
