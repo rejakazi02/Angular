@@ -20,7 +20,18 @@ import { CoursesService } from "./courses.service";
 
 
   <img src="{{ imageUrl }}" style="width: 300px;" />
-  <img [src]="title" />
+  // <img [src]="title" />
+
+/* Pipes*/
+
+<br>
+{{ coursess.titles }} <br>
+{{ coursess.students }} <br>
+{{ coursess.rating }} <br>
+{{ coursess.price }} <br>
+{{ coursess.releaseDate }} <br>
+
+
   `
 })
 
@@ -45,5 +56,17 @@ constructor(service: CoursesService) {
 
 
 imageUrl = "https://picsum.photos/seed/picsum/200/300";
+
+
+/* Pipes*/
+
+coursess = {
+
+  titles: "The complete Angular Course",
+  rating: 4.9876,
+  students: 32156,
+  price: 10987,
+  releaseDate: new Date(2022,3,1)
+}
 
 }
