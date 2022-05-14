@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   // title = 'angular-material-apps';
-  courses = [1];
+  // courses = [1];
+  viewMode = "map";
 }
