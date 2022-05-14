@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   // title = 'angular-material-apps';
   // courses = [1];
-  viewMode = "map";
+  // viewMode = "map";
+
+  courses = [
+    {id: 1, name: 'course1'},
+    {id: 2, name: 'course2'},
+    {id: 3, name: 'course3'},
+
+  ];
 }
