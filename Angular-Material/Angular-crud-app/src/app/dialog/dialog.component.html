@@ -1,4 +1,3 @@
-
 <h1 mat-dialog-title>Add Product Form</h1>
 <div mat-dialog-content>
   <mat-form-field appearance="outline">
@@ -8,12 +7,12 @@
 
   <mat-form-field appearance="outline">
     <mat-label>Product Category</mat-label>
-   <mat-select  placeholder=" categoy">
-       <mat-option value="Fruits">Fruits</mat-option>
-       <mat-option value="Vagetables">Vagetables </mat-option>
-       <mat-option value="Electronic">Electronic</mat-option>
+    <mat-select placeholder=" categoy">
+      <mat-option value="Fruits">Fruits</mat-option>
+      <mat-option value="Vagetables">Vagetables </mat-option>
+      <mat-option value="Electronic">Electronic</mat-option>
 
-   </mat-select>
+    </mat-select>
   </mat-form-field>
 
   <mat-form-field appearance="outline">
@@ -26,11 +25,31 @@
   <br>
   <br>
 
-<label for=""><h1>Poduct Freshess</h1></label>
-<mat-radio-group class="example-radio-group">
+  <label for="">
+    <h1>Poduct Freshess</h1>
+  </label>
+  <mat-radio-group class="example-radio-group">
     <mat-radio-button class="example-radio-button" *ngFor="let fresh of freshnessList" [value]="fresh">
       {{fresh}}
     </mat-radio-button>
-</mat-radio-group>
+  </mat-radio-group>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Price</mat-label>
+    <input matInput type="number" placeholder="Price">
+  </mat-form-field>
+
+
+  <mat-form-field appearance="outline">
+    <mat-label>Comment</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+
+</div>
+
+
+<div mat-dialog-actions [align]="'end'">
+   <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+   <button mat-raised-button color="primary">Save</button>
 
 </div>
