@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validator, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-dialog',
@@ -19,8 +19,19 @@ productForm !: FormGroup;
 
     this.productForm = this.formBuilder.group({
 productName : ['', Validators.required],
-
+category :  ['', Validators.required],
+freshness : ['', Validators.required],
+price : ['', Validators.required],
+comment : ['', Validators.required],
+date : ['', Validators.required]
     })
   }
+
+
+  addProduct(){
+
+    console.log(this.productForm.value)
+  }
+
 
 }
