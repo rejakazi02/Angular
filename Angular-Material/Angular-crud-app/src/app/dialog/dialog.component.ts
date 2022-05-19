@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ApiService } from '../services/api.service';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-dialog',
@@ -13,7 +15,7 @@ productForm !: FormGroup;
 
 
 
-  constructor(private formBuilder : FormBuilder) { }
+  constructor(private formBuilder : FormBuilder, private api : ApiService, private dialogRef : MatDialogRef<DialogComponent>) { }
 
   ngOnInit(): void {
 
@@ -30,7 +32,23 @@ date : ['', Validators.required]
 
   addProduct(){
 
+    if (this.productForm.valid) {
+        this.api.postProduct(this.productForm.value)
+        .subscribe({
+          next:(res) => {
+
+            alert("Product added Successfully")
+         this.productForm.reset();
+         this.dialogRef.close(save);
+          },
+          error: () => {
+            alert("Error")
+          }
+        })
+    }
+
     console.log(this.productForm.value)
+
   }
 
 
