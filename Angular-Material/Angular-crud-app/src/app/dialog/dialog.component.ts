@@ -39,7 +39,7 @@ date : ['', Validators.required]
 
             alert("Product added Successfully")
          this.productForm.reset();
-         this.dialogRef.close(save);
+         this.dialogRef.close("save");
           },
           error: () => {
             alert("Error")
