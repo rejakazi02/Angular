@@ -24,3 +24,9 @@ table {
   margin: auto;
   max-width: 1200px;
 }
+
+
+.homeBtn {
+  margin-left: 20px;
+  color: white;
+}
