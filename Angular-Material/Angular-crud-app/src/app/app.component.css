@@ -1,6 +1,3 @@
-
-
-
 .example-spacer {
   flex: 1 1 auto;
 }
@@ -29,4 +26,10 @@ table {
 .homeBtn {
   margin-left: 20px;
   color: white;
+}
+
+.navBTN{
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
 }
