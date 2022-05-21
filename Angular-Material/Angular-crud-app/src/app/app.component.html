@@ -5,7 +5,12 @@
 
   <span>Angular crud operation Using material</span>
 
- <a class="homeBtn" href="<app-about></app-about>">home</a>
+
+      <!-- <li><a routerLink="a" routerLinkActive="active">First Component</a></li> -->
+
+      <a routerLink="/ddd" >Home</a>
+<a routerLink="/about" > About</a>
+
   <span class="example-spacer"></span>
 
 
@@ -20,7 +25,7 @@
 </mat-toolbar>
 
 
-<div class="container">
+<div class="container test" >
   <div style="margin-top: 10px;">
     <mat-form-field appearance="standard">
       <mat-label>Filter</mat-label>
@@ -94,4 +99,7 @@
   </div>
 </div>
 
+
+
+<router-outlet></router-outlet>
 
