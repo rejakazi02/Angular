@@ -4,8 +4,9 @@ import { AboutComponent } from './component/about/about.component';
 import { DialogComponent } from './dialog/dialog.component';
 
 const routes: Routes = [
+  { path: 'ddd', component: DialogComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'ddd', component: DialogComponent }
+  // { path: 'ddd', component: DialogComponent }
 ];
 
 @NgModule({
