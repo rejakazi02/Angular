@@ -5,7 +5,7 @@ import { ApiService } from './services/api.service';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { AboutComponent } from './component/about/about.component';
+// import { AboutComponent } from './component/about/about.component';
 
 @Component({
   selector: 'app-root',
