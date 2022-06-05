@@ -27,9 +27,9 @@
   -o-border-radius: 5px;
   display: grid;
   align-items: center;
-  grid-template-columns: 2fr 2fr 1fr;
-  margin: 0px 20px;
-  padding: 10px;
+  grid-template-columns: 2fr 2fr .01fr;
+  margin-left: 33px;
+  padding: 0px;
 }
 
 
@@ -40,4 +40,54 @@
     font-size: 1em;
     height: 100%;
    outline: none;
+}
+
+
+.selectFiled{
+
+  padding: 0px !important;
+  margin: 1px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+mat-form-field{
+  border-radius: 4px 4px 0 0;
+   padding: 0 !important;
+
+   position: absolute !important;
+   margin-top: 5px;
+
+
+}
+
+mat-label {
+  padding: 1px !important;
+height: 10px !important;
+margin-top: 10px !important;
+
+}
+
+mat-select{
+  margin-top: -10px !important;
+}
+
+
+.searchBTN{
+  background-color: black;
+  width: 41px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.seBtn{
+
+  color: white;
+  background-color: black;
 }
