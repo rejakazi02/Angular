@@ -1,0 +1,54 @@
+<nav>
+  <div class="logoDiv">
+    <div class="menu1Section">
+      <div class="lgoDi">
+        <img src="../assets/img/logo_furniture.png" alt="" />
+      </div>
+
+      <div class="searchDiv">
+        <input type="search" name="s" class="form-control" placeholder="Find your product" />
+
+        <div class="selectFiled">
+          <mat-form-field appearance="fill" class="testt">
+            <mat-label>All Categories</mat-label>
+            <mat-select>
+              <mat-option>None</mat-option>
+              <mat-option *ngFor="let state of states" [value]="state">{{
+                state
+              }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="searchBTN">
+          <button class="seBtn">
+            <mat-icon aria-hidden="false" aria-label="Example home icon">search</mat-icon>
+          </button>
+        </div>
+      </div>
+
+      <div class="cart-Icon">
+        <button class="carBTN">
+          <mat-icon>favorite_border</mat-icon>
+          <p class="CartCount">0</p>
+        </button>
+        <button class="carBTN">
+         <mat-icon>https</mat-icon>
+         <p class="CartCount">0</p>
+        </button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="menu2Section">
+
+    <h1></h1>
+    <h1>d</h1>
+    <h1>d</h1>
+    <h1>d</h1>
+    <h1></h1>
+  </div>
+</nav>
+
