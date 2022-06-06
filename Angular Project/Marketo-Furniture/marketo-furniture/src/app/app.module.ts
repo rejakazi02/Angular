@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NewslatterComponent } from './components/newslatter/newslatter.component';
 import { ClientsComponent } from './components/clients/clients.component';
 import { MarketplaceComponent } from './components/marketplace/marketplace.component';
+import { SlidersComponent } from './components/sliders/sliders.component';
 
 
 
@@ -24,7 +25,8 @@ import { MarketplaceComponent } from './components/marketplace/marketplace.compo
     FooterComponent,
     NewslatterComponent,
     ClientsComponent,
-    MarketplaceComponent
+    MarketplaceComponent,
+    SlidersComponent
   ],
   imports: [
     BrowserModule,
