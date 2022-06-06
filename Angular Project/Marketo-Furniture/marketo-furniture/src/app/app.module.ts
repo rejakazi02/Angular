@@ -10,6 +10,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { FooterComponent } from './components/footer/footer.component';
+import { NewslatterComponent } from './components/newslatter/newslatter.component';
 
 
 
@@ -18,7 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    NewslatterComponent
   ],
   imports: [
     BrowserModule,
