@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -16,7 +17,8 @@ import {MatMenuModule} from '@angular/material/menu';
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
