@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { FooterComponent } from './components/footer/footer.component';
 import { NewslatterComponent } from './components/newslatter/newslatter.component';
+import { ClientsComponent } from './components/clients/clients.component';
 
 
 
@@ -20,7 +21,8 @@ import { NewslatterComponent } from './components/newslatter/newslatter.componen
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    NewslatterComponent
+    NewslatterComponent,
+    ClientsComponent
   ],
   imports: [
     BrowserModule,
