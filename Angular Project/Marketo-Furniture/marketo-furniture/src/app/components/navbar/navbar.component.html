@@ -33,129 +33,157 @@
           <p class="CartCount">0</p>
         </button>
         <button class="carBTN">
-         <mat-icon>https</mat-icon>
-         <p class="CartCount">0</p>
+          <mat-icon>https</mat-icon>
+          <p class="CartCount">0</p>
         </button>
       </div>
     </div>
-
-
   </div>
 
   <div class="menu2Section">
-
     <div class="m2Div1"></div>
 
-
     <div class="m2Div2">
-      <button id="AllCat" mat-button [matMenuTriggerFor]="allCategories"><mat-icon>list</mat-icon> All Categories</button>
-<mat-menu #allCategories="matMenu">
-  <button id="furniture" mat-menu-item [matMenuTriggerFor]="furniture">Furniture</button>
-  <button id="furniture" mat-menu-item [matMenuTriggerFor]="furniture">Furniture</button>
-  <button id="furniture" mat-menu-item [matMenuTriggerFor]="furniture">Furniture</button>
-  <button id="furniture" mat-menu-item [matMenuTriggerFor]="furniture">Furniture</button>
-  <button id="furniture" mat-menu-item >Furniture</button>
-  <button id="furniture" mat-menu-item >Furniture</button>
+      <button id="AllCat" mat-button [matMenuTriggerFor]="allCategories">
+        <span class="DD0ownBtn"><mat-icon>list</mat-icon></span> All Categories <span class="DD0ownBtn"><mat-icon>keyboard_arrow_down</mat-icon></span>
+      </button>
+      <mat-menu #allCategories="matMenu">
+        <button id="furniture" mat-menu-item [matMenuTriggerFor]="furniture">
+          Furniture
+        </button>
+        <button id="furniture" mat-menu-item [matMenuTriggerFor]="furniture">
+          Furniture
+        </button>
+        <button id="furniture" mat-menu-item [matMenuTriggerFor]="furniture">
+          Furniture
+        </button>
+        <button id="furniture" mat-menu-item [matMenuTriggerFor]="furniture">
+          Furniture
+        </button>
+        <button id="furniture" mat-menu-item>Furniture</button>
+        <button id="furniture" mat-menu-item>Furniture</button>
+      </mat-menu>
 
+      <mat-menu class="furnitureSubDiv" #furniture="matMenu" id="furnitureSubDiv">
+        <div class="furnitureDiv">
+          <div>
+            <img src="../../../assets/img/1-6 (1).jpg" alt="" />
+            <h1>furnitureDiv</h1>
+          </div>
+          <div>
+            <img src="../../../assets/img/wS.jpg" alt="" />
+            <h1>furnitureDiv</h1>
+          </div>
+          <div>
+            <img src="../../../assets/img/dT.jpg" alt="" />
+            <h1>furnitureDiv</h1>
+          </div>
+          <div>
+            <img src="../../../assets/img/LAP.jpg" alt="" />
+            <h1>furnitureDiv</h1>
+          </div>
+          <div>
+            <img src="../../../assets/img/tL.jpg" alt="" />
+            <h1>furnitureDiv</h1>
+          </div>
+          <div>
+            <img src="../../../assets/img/1-6 (1).jpg" alt="" />
+            <h1>furnitureDiv</h1>
+          </div>
+        </div>
+      </mat-menu>
 
-</mat-menu>
-
-
-
-<mat-menu class="furnitureSubDiv" #furniture="matMenu" id="furnitureSubDiv">
-<div class="furnitureDiv">
-<div>
-  <img src="../../../assets/img/1-6 (1).jpg" alt="">
-  <h1>furnitureDiv</h1>
-</div>
-<div>
-  <img src="../../../assets/img/wS.jpg" alt="">
-  <h1>furnitureDiv</h1>
-</div>
-<div>
-  <img src="../../../assets/img/dT.jpg" alt="">
-  <h1>furnitureDiv</h1>
-</div>
-<div>
-  <img src="../../../assets/img/LAP.jpg" alt="">
-  <h1>furnitureDiv</h1>
-</div>
-<div>
-  <img src="../../../assets/img/tL.jpg" alt="">
-  <h1>furnitureDiv</h1>
-</div>
-<div>
-  <img src="../../../assets/img/1-6 (1).jpg" alt="">
-  <h1>furnitureDiv</h1>
-</div>
-
-
-</div>
-</mat-menu>
-
-
-<mat-menu #furnitur="matMenu">
-  <button mat-menu-item>Insects</button>
-  <button mat-menu-item>Molluscs</button>
-  <button mat-menu-item>Crustaceans</button>
-  <button mat-menu-item>Corals</button>
-  <button mat-menu-item>Arachnids</button>
-  <button mat-menu-item>Velvet worms</button>
-  <button mat-menu-item>Horseshoe crabs</button>
-</mat-menu>
-
-
+      <!-- <mat-menu #furnitur="matMenu">
+        <button mat-menu-item>Insects</button>
+        <button mat-menu-item>Molluscs</button>
+        <button mat-menu-item>Crustaceans</button>
+        <button mat-menu-item>Corals</button>
+        <button mat-menu-item>Arachnids</button>
+        <button mat-menu-item>Velvet worms</button>
+        <button mat-menu-item>Horseshoe crabs</button>
+      </mat-menu> -->
     </div>
-
-
 
     <div class="m2Div3">
+      <div class="dropdown">
+        <a class="dropbtn">Home <span class="DDownBtn"><mat-icon>keyboard_arrow_down</mat-icon></span></a>
+        <div class="dropdown-content">
+
+          <div class="HomeBtn">
+            <div>
+              <img src="../../../assets/img/1-6 (1).jpg" alt="" />
+              <h1>furnitureDiv</h1>
+            </div>
+
+            <div>
+              <img src="../../../assets/img/1-6 (1).jpg" alt="" />
+              <h1>furnitureDiv</h1>
+            </div>
+
+            <div>
+              <img src="../../../assets/img/1-6 (1).jpg" alt="" />
+              <h1>furnitureDiv</h1>
+            </div>
+
+            <div>
+              <img src="../../../assets/img/1-6 (1).jpg" alt="" />
+              <h1>furnitureDiv</h1>
+            </div>
+
+            <div>
+              <img src="../../../assets/img/1-6 (1).jpg" alt="" />
+              <h1>furnitureDiv</h1>
+            </div>
+            <div>
+              <img src="../../../assets/img/1-6 (1).jpg" alt="" />
+              <h1>furnitureDiv</h1>
+            </div>
 
 
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
+          </div>
 
+        </div>
+      </div>
 
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
+      <div class="dropdown">
+        <a class="dropbtn">Pages <span class="DDownBtn"><mat-icon>keyboard_arrow_down</mat-icon></span></a>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
 
+      <div class="dropdown">
+        <a class="dropbtn">Shop <span class="DDownBtn"><mat-icon>keyboard_arrow_down</mat-icon></span></a>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
 
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
-
-
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
-
+      <div class="dropdown">
+        <a class="dropbtn">Blog <span class="DDownBtn"><mat-icon>keyboard_arrow_down</mat-icon></span></a>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a class="dropbtn">Gallery <span class="DDownBtn"><mat-icon>keyboard_arrow_down</mat-icon></span></a>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
     </div>
-    <div class="m2Div4">2</div>
+    <div class="m2Div4">
+      <h3>BLACK FRIDAY</h3>
+      <span>Get 45% Off! </span>
+    </div>
     <div class="m2Div5"></div>
-
   </div>
 </nav>
-
-

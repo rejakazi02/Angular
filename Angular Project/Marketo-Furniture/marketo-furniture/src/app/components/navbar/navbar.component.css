@@ -108,10 +108,14 @@ mat-select {
 
 .m2Div2{
 
-  border-left: 2px solid fuchsia;
-  border-right: 2px solid fuchsia;
+  border-left: 1px solid fuchsia;
+  border-right: 1px solid fuchsia;
 }
 
+.DD0ownBtn{
+  margin-top: 3px;
+
+}
 
 #AllCat{
   width: 253px !important;
@@ -120,7 +124,7 @@ mat-select {
   background-color: #f07f13 !important;
   color: white !important;
   border: none !important;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .furnitureDiv{
@@ -152,13 +156,23 @@ min-height: 300px !important;
 }
 
 
+.m2Div3{
+
+  /* margin-top: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid fuchsia;
+}
 
 .dropbtn {
-  background-color: #04AA6D;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 16px;
   font-size: 16px;
   border: none;
+  gap: 10px;
+  padding-right: 20px;
 }
 
 .dropdown {
@@ -174,6 +188,10 @@ min-height: 300px !important;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   float:right;
+  max-width: 100px;
+  min-width: 100px;
+
+
 }
 
 .dropdown-content a {
@@ -187,4 +205,47 @@ min-height: 300px !important;
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.HomeBtn{
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  position: fixed;
+  z-index: 999999999999999999;
+}
+
+
+.DDownBtn{
+  margin-top: -2px !important;
+  position: absolute;
+}
+
+
+.m2Div4{
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+border-right: 1px solid fuchsia;
+
+font-family: rubik,Sans-serif;
+font-size: 16px;
+font-weight: 700;
+
+color: #f07f13;
+background: white; /* default color */
+
+/* "to left" / "to right" - affects initial color */
+background: linear-gradient(to right, white 50%, black 50%) left;
+background-size: 200%;
+transition: .5s ease-out;
+}
+
+.m2Div4:hover{
+
+  background-position: right;
+  color: white;
+}
