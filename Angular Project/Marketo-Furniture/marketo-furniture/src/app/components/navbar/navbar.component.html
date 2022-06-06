@@ -44,11 +44,118 @@
 
   <div class="menu2Section">
 
-    <h1></h1>
-    <h1>d</h1>
-    <h1>d</h1>
-    <h1>d</h1>
-    <h1></h1>
+    <div class="m2Div1"></div>
+
+
+    <div class="m2Div2">
+      <button id="AllCat" mat-button [matMenuTriggerFor]="allCategories"><mat-icon>list</mat-icon> All Categories</button>
+<mat-menu #allCategories="matMenu">
+  <button id="furniture" mat-menu-item [matMenuTriggerFor]="furniture">Furniture</button>
+  <button id="furniture" mat-menu-item [matMenuTriggerFor]="furniture">Furniture</button>
+  <button id="furniture" mat-menu-item [matMenuTriggerFor]="furniture">Furniture</button>
+  <button id="furniture" mat-menu-item [matMenuTriggerFor]="furniture">Furniture</button>
+  <button id="furniture" mat-menu-item >Furniture</button>
+  <button id="furniture" mat-menu-item >Furniture</button>
+
+
+</mat-menu>
+
+
+
+<mat-menu class="furnitureSubDiv" #furniture="matMenu" id="furnitureSubDiv">
+<div class="furnitureDiv">
+<div>
+  <img src="../../../assets/img/1-6 (1).jpg" alt="">
+  <h1>furnitureDiv</h1>
+</div>
+<div>
+  <img src="../../../assets/img/wS.jpg" alt="">
+  <h1>furnitureDiv</h1>
+</div>
+<div>
+  <img src="../../../assets/img/dT.jpg" alt="">
+  <h1>furnitureDiv</h1>
+</div>
+<div>
+  <img src="../../../assets/img/LAP.jpg" alt="">
+  <h1>furnitureDiv</h1>
+</div>
+<div>
+  <img src="../../../assets/img/tL.jpg" alt="">
+  <h1>furnitureDiv</h1>
+</div>
+<div>
+  <img src="../../../assets/img/1-6 (1).jpg" alt="">
+  <h1>furnitureDiv</h1>
+</div>
+
+
+</div>
+</mat-menu>
+
+
+<mat-menu #furnitur="matMenu">
+  <button mat-menu-item>Insects</button>
+  <button mat-menu-item>Molluscs</button>
+  <button mat-menu-item>Crustaceans</button>
+  <button mat-menu-item>Corals</button>
+  <button mat-menu-item>Arachnids</button>
+  <button mat-menu-item>Velvet worms</button>
+  <button mat-menu-item>Horseshoe crabs</button>
+</mat-menu>
+
+
+    </div>
+
+
+
+    <div class="m2Div3">
+
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+    </div>
+    <div class="m2Div4">2</div>
+    <div class="m2Div5"></div>
+
   </div>
 </nav>
+
 
