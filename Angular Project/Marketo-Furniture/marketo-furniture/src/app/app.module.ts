@@ -14,6 +14,7 @@ import { NewslatterComponent } from './components/newslatter/newslatter.componen
 import { ClientsComponent } from './components/clients/clients.component';
 import { MarketplaceComponent } from './components/marketplace/marketplace.component';
 import { SlidersComponent } from './components/sliders/sliders.component';
+import { TabMenuComponent } from './components/tab-menu/tab-menu.component';
 
 
 
@@ -26,7 +27,8 @@ import { SlidersComponent } from './components/sliders/sliders.component';
     NewslatterComponent,
     ClientsComponent,
     MarketplaceComponent,
-    SlidersComponent
+    SlidersComponent,
+    TabMenuComponent
   ],
   imports: [
     BrowserModule,

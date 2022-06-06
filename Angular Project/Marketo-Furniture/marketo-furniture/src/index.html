@@ -19,20 +19,14 @@
 
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typescript/2.1.1/typescript.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typescript/2.1.1/typescript.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.8.5/zone.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
   <!-- Configure SystemJS -->
-  <script src="systemjs.config.js"></script>
 
-  <script>
-    System
-      .import('main.ts')
-      .catch(console.error.bind(console));
-  </script>
 
   <!-- Load the Angular Material stylesheet -->
   <link href="https://unpkg.com/@angular/material/prebuilt-themes/indigo-pink.css" rel="stylesheet">
@@ -40,13 +34,45 @@
   <style>body { font-family: Roboto, Arial, sans-serif; }</style>
 
 
-
+<!-- Link Swiper's CSS -->
+<link
+rel="stylesheet"
+href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
 
 </head>
 
 <body class="mat-typography">
   <app-root></app-root>
-</body>
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+<!--
 <script>
   $(document).ready(function () {
     // Add smooth scrolling to all links
@@ -74,5 +100,14 @@
       } // End if
     });
   });
-</script>
+</script> -->
+
+
+
+
+
+
+
+</body>
+
 </html>

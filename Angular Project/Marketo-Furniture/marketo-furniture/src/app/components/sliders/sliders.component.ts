@@ -12,4 +12,7 @@ export class SlidersComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+
+
 }

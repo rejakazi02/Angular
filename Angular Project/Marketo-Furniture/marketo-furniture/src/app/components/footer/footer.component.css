@@ -1,0 +1,152 @@
+
+
+
+
+.basic_section {
+  /* padding: 3rem 3rem; */
+  width: 100%;
+margin-bottom: 70px;
+
+}
+
+
+.footerlogo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+  }
+.basic_container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1.5fr 1.5fr 1fr;
+  /* width: 100%; */
+  gap: 1rem;
+  padding: 0 30px;
+}
+.basic_left {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.basic_left_first {
+  /* height: 100%;
+  color: rgb(83, 77, 77); */
+margin: 0px;
+}
+.left_first_items {
+  padding: 1rem 0rem;
+}
+.location {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #fed700;
+  border-radius: 5px;
+}
+
+.location:hover {
+  background-color: #62ab00;
+  transition: ease-in-out 1s;
+}
+.location a {
+  color: white;
+  text-decoration: none;
+}
+.basic_left_second {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  margin: 0px;
+}
+.left_second_img_top {
+  display: flex;
+  gap: 1rem;
+}
+.left_second_img_bottom {
+  display: flex;
+  gap: 1rem;
+}
+/* // --------------------------------- */
+.basic_right {
+  padding: 30px 30px;
+}
+.backTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.basic_right_left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: black;
+}
+.basic_right_right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: black;
+}
+
+.basic_right_left a,
+.basic_right_right a {
+  color: rgb(114, 108, 108);
+}
+
+.SecuredBy{
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+.bottom_most_section {
+  /* padding: 2rem 3rem; */
+  width: 100%;
+  background-color: #FED700;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: ;
+}
+.bottom_most_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.bottom_most_left {
+  color: rgb(73, 71, 71);
+}
+.copy_text{
+    color: black;
+    font-weight: bold;
+}
+.bottom_most_right {
+    display: flex;
+    gap: 1rem;
+color: rgb(73, 71, 71);
+
+margin-right: 60px;
+}
+
+
+.Copyrights{
+  margin-left: 60px;
+}
+
+.fotImg{
+
+  color: white;
+  width: 45px;
+  height: 15px;
+  margin-top: 8px;
+
+}
