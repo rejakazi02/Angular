@@ -1,0 +1,14 @@
+.newsletterMainDiv{
+  background-color: #2ed3bd;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  height: 160px;
+}
+
+.newsTextDiv{
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
