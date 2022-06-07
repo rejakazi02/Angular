@@ -1,0 +1,24 @@
+
+
+
+ .clientSection{
+
+  overflow: hidden;
+    border-style: solid;
+    border-width: 1px 0 0;
+    border-color: #e3e3e3;
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+
+    padding: 77px 0 80px;
+    /* height: ; */
+ }
+
+
+ .clientDiv{
+
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+ }
