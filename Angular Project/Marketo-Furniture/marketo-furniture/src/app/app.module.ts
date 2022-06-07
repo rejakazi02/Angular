@@ -15,6 +15,10 @@ import { ClientsComponent } from './components/clients/clients.component';
 import { MarketplaceComponent } from './components/marketplace/marketplace.component';
 import { SlidersComponent } from './components/sliders/sliders.component';
 import { TabMenuComponent } from './components/tab-menu/tab-menu.component';
+import { ProductsComponent } from './components/products/products.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { RecentlyAddedComponent } from './components/recently-added/recently-added.component';
+import { NewArrivalsComponent } from './components/new-arrivals/new-arrivals.component';
 
 
 
@@ -28,7 +32,11 @@ import { TabMenuComponent } from './components/tab-menu/tab-menu.component';
     ClientsComponent,
     MarketplaceComponent,
     SlidersComponent,
-    TabMenuComponent
+    TabMenuComponent,
+    ProductsComponent,
+    CategoriesComponent,
+    RecentlyAddedComponent,
+    NewArrivalsComponent
   ],
   imports: [
     BrowserModule,

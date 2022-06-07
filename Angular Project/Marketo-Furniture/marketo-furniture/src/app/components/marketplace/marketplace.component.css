@@ -1,0 +1,88 @@
+
+
+.marketplaceSection{
+  background-color: #f8f8f8;
+  overflow: hidden;
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    padding: 70px 0 160px;
+}
+
+
+.mpMainDiv{
+  padding: 0 120px;
+}
+
+
+.mpHeader{
+
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mpTextH2{
+
+  font-weight: 900;
+  font-size:  1.57143em;
+  letter-spacing: 0.7px;
+}
+
+
+.mpTextA{
+
+  /* margin: 70px 0px; */
+font-size: 15px;
+float: right;
+color: #f07f13;
+font-weight: 500;
+
+}
+
+.mpMainCardDiv{
+margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+
+.cardDiv1{
+  background-color: white;
+  color: black;
+}
+
+.cardDiv1:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+
+}
+
+.cardTextDiv{
+  margin: 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardBrandType{
+  color: blue;
+}
+
+.cardBrandDtls{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.7px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: black;
+}
+.cardBrandDtls:hover{
+
+  color: #f07f13;
+}
+
+.cardCommentDiv{
+
+  display: flex;
+gap: 10px;
+}
+
