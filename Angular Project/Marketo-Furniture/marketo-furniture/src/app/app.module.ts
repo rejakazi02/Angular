@@ -21,6 +21,9 @@ import { RecentlyAddedComponent } from './components/recently-added/recently-add
 import { NewArrivalsComponent } from './components/new-arrivals/new-arrivals.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { OffersectionComponent } from './components/offersection/offersection.component';
+import { DeliverySectionComponent } from './components/delivery-section/delivery-section.component';
+import { RelaxProductSectionComponent } from './components/relax-product-section/relax-product-section.component';
+
 
 
 
@@ -39,7 +42,10 @@ import { OffersectionComponent } from './components/offersection/offersection.co
     CategoriesComponent,
     RecentlyAddedComponent,
     NewArrivalsComponent,
-    OffersectionComponent
+    OffersectionComponent,
+    DeliverySectionComponent,
+    RelaxProductSectionComponent,
+
   ],
   imports: [
     BrowserModule,
