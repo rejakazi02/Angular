@@ -20,6 +20,7 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { RecentlyAddedComponent } from './components/recently-added/recently-added.component';
 import { NewArrivalsComponent } from './components/new-arrivals/new-arrivals.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { OffersectionComponent } from './components/offersection/offersection.component';
 
 
 
@@ -37,7 +38,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     ProductsComponent,
     CategoriesComponent,
     RecentlyAddedComponent,
-    NewArrivalsComponent
+    NewArrivalsComponent,
+    OffersectionComponent
   ],
   imports: [
     BrowserModule,
