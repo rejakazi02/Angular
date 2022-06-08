@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+
+.relaxProductSection{
+  background-color: white;
+  overflow: hidden;
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    padding: 70px 0 160px;
+}
+
+
+.relaxProductMainDiv{
+  padding: 0 120px;
+}
+
+
+.relaxProductHeader{
+
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.relaxProductTextH2{
+
+  font-weight: 900;
+  font-size:  1.57143em;
+  letter-spacing: 0.7px;
+}
+
+
+.relaxProductMainCardDiv{
+margin-top: 30px;
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr;
+  gap: 50px;
+}
+
+
+.rpBDiv{
+  max-width: 100%;
+  height: auto;
+}
+
+
