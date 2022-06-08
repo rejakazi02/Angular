@@ -1,0 +1,84 @@
+
+
+
+
+
+
+
+.recentSection{
+  background-color: white;
+  overflow: hidden;
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    /* padding: 0px 0 160px; */
+    margin-top: 0px;
+}
+
+
+.recentMainDiv{
+  padding: 0 120px;
+}
+
+
+.recentHeader{
+
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: -61px;
+}
+
+.recentTextH2{
+
+  font-weight: 900;
+  font-size:  1.57143em;
+  letter-spacing: 0.7px;
+}
+
+
+
+
+.recentMainCardDiv{
+margin-top: 30px;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 20px;
+}
+
+
+.onSellDiv{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  justify-content: center;
+}
+
+.productDesignDiv{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #ebebeb;
+  width: 190px;
+  margin-top: 25px;
+}
+
+.productImg{
+  width: 155px;
+  padding: 7px;
+}
+
+.productPrice{
+  color: #F07F13;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -11px;
+}
+
+
+
+/* angular mat  */
+
+ .mat-tab-group {
+  margin-bottom: 48px;
+}

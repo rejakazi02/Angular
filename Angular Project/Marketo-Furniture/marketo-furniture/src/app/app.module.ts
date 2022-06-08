@@ -19,6 +19,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { RecentlyAddedComponent } from './components/recently-added/recently-added.component';
 import { NewArrivalsComponent } from './components/new-arrivals/new-arrivals.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 
@@ -45,7 +46,8 @@ import { NewArrivalsComponent } from './components/new-arrivals/new-arrivals.com
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTabsModule
 
 
 
