@@ -54,6 +54,8 @@ margin-top: 30px;
   background-color: white;
   color: black;
   border: 3px solid #efefef;
+position: relative;
+
 
 }
 
@@ -62,6 +64,21 @@ margin-top: 30px;
   border-bottom: none;
 
 }
+
+.starDiv{
+  position: absolute;
+  right: 0;
+  padding: 18px;
+  color: #f07f13;
+  display: none;
+
+}
+
+
+.cardDiv1:hover .starDiv{
+display: block;
+}
+
 
 
 
