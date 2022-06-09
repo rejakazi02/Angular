@@ -23,6 +23,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { OffersectionComponent } from './components/offersection/offersection.component';
 import { DeliverySectionComponent } from './components/delivery-section/delivery-section.component';
 import { RelaxProductSectionComponent } from './components/relax-product-section/relax-product-section.component';
+import { SwiperComponent } from './components/swiper/swiper.component';
+import { SwiperModule } from 'swiper/angular';
 
 
 
@@ -45,6 +47,8 @@ import { RelaxProductSectionComponent } from './components/relax-product-section
     OffersectionComponent,
     DeliverySectionComponent,
     RelaxProductSectionComponent,
+    SwiperComponent,
+
 
   ],
   imports: [
@@ -55,7 +59,8 @@ import { RelaxProductSectionComponent } from './components/relax-product-section
     BrowserAnimationsModule,
     MatIconModule,
     MatMenuModule,
-    MatTabsModule
+    MatTabsModule,
+    SwiperModule
 
 
 

@@ -1,0 +1,26 @@
+<swiper
+[slidesPerView]="1"
+[spaceBetween]="50"
+(swiper)="onSwiper($event)"
+(slideChange)="onSlideChange()"
+[navigation]="true"
+[pagination]="{ clickable: true }"
+[scrollbar]="{ draggable: true }"
+[scrollbar]="false"
+
+class="tet"
+>
+<ng-template swiperSlide class="test">
+  <img class="test" src="../../../assets/img/sl1.png" alt="">
+</ng-template>
+<ng-template swiperSlide>
+  <img class="test" src="../../../assets/img/sl2.png" alt="">
+</ng-template>
+<ng-template swiperSlide>
+  <img class="test" src="../../../assets/img/sl3.png" alt="">
+</ng-template>
+<ng-template swiperSlide>
+  <img class="test" src="../../../assets/img/sl1.png" alt="">
+</ng-template>
+
+</swiper>
