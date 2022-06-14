@@ -1,13 +1,22 @@
+require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
+const mongodb = require('mongodb');
+const mongoose = require('mongoose');
+
 const app = express();
+connectMongoose();
 
+async function connectMongoose(){
+    await mongoose.connect("mongodb://localhost:27017/marketo-db");
+    console.log("Mongodb connected");
+}
 
+app.use(express.json());
+app.use(cors());
 // create a server where browsers and API calls can connect 
 
-app.listen(3000, function () {
 
-    console.log("localhost:3000");
-});
 
 // create a route that we can access in the browser 
 
@@ -19,4 +28,45 @@ app.get('/', function (req, res) {
 
 app.get('/love', (req, res) => {
     res.send('Hi love');
-})
+});
+
+app.get('/api/products', async(req, res)=>{
+    const products = await productModel.find();
+    res.status(200).json(
+        {
+            "success": true,
+            "message": "Success",
+            "data": products
+        }
+    );
+});
+
+app.listen(3000, function () {
+    console.log("localhost:3000");
+});
+
+const productSchema = new mongoose.Schema(
+    {
+        productTitle: String,
+        productPrice: Number,
+        productImage: String,
+        productCategory: String
+    }
+);
+
+const productModel = mongoose.model("product", productSchema);
+
+// createProduct();
+
+async function createProduct(){
+    const newProduct = new productModel({
+        productTitle: "Heavy Duty Antis",
+        productPrice: 4000,
+        productImage: "https://demo.xpeedstudio.com/marketov2/furniture/wp-content/uploads/sites/11/2018/10/1-min-1-253x200-1.png",
+        productCategory: "Home Furniture"
+    });
+    await newProduct.save();
+    console.log("Product saved to db");
+}
+
+

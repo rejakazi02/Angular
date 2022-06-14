@@ -18,14 +18,27 @@
       <div class="newArrivalsMainCardDiv">
 
         <mat-tab-group mat-align-tabs="end">
+
+
           <mat-tab label="On Sell">
             <div class="onSellDiv">
-              <div class="productDesignDiv">
+              <!-- <div *ngFor="let p of products">
+                <p>{{p.productTitle}}</p>
+              </div> -->
+
+              <div class="productDesignDiv" *ngFor="let p of products">
+                <img class="productImg" [src]="p.productImage" alt="">
+                <a class="product" href=""> <h2>{{p.productTitle}}</h2></a>
+                <p class="productPrice">${{p.productPrice}}</p>
+              </div>
+
+              <!-- <div class="productDesignDiv">
                 <img class="productImg" src="../../../assets/img/pp1.jpg" alt="">
                 <a class="product" href=""> <h2>Heavy Duty Antis</h2></a>
                 <p class="productPrice">$4,000.00</p>
-              </div>
+              </div> -->
 
+<!--
               <div class="productDesignDiv">
                 <img class="productImg" src="../../../assets/img/pp2.png" alt="">
                 <a class="product" href=""> <h2>Heavy Duty Antis</h2></a>
@@ -54,11 +67,17 @@
                 <img class="productImg" src="../../../assets/img/ctp5.png" alt="">
                 <a class="product" href=""> <h2>Zux Mortared</h2></a>
                 <p class="productPrice">$4,000.00</p>
-              </div>
+              </div> -->
 
            </div>
 
           </mat-tab>
+
+
+
+
+
+
           <mat-tab label="Hot Sell">
             <div class="onSellDiv">
               <div class="productDesignDiv">

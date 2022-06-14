@@ -25,6 +25,8 @@ import { DeliverySectionComponent } from './components/delivery-section/delivery
 import { RelaxProductSectionComponent } from './components/relax-product-section/relax-product-section.component';
 import { SwiperComponent } from './components/swiper/swiper.component';
 import { SwiperModule } from 'swiper/angular';
+import { ProductsService } from './services/products.service';
+import {HttpClientModule} from '@angular/common/http';
 
 
 
@@ -60,13 +62,14 @@ import { SwiperModule } from 'swiper/angular';
     MatIconModule,
     MatMenuModule,
     MatTabsModule,
-    SwiperModule
+    SwiperModule,
+    HttpClientModule
 
 
 
 
   ],
-  providers: [],
+  providers: [ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
