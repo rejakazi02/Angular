@@ -60,10 +60,10 @@ const productModel = mongoose.model("product", productSchema);
 
 async function createProduct(){
     const newProduct = new productModel({
-        productTitle: "Heavy Duty Antis",
-        productPrice: 4000,
-        productImage: "https://demo.xpeedstudio.com/marketov2/furniture/wp-content/uploads/sites/11/2018/10/1-min-1-253x200-1.png",
-        productCategory: "Home Furniture"
+        productTitle: "Golden Bluetooth",
+        productPrice: 1,500.00,
+        productImage: "https://demo.xpeedstudio.com/marketov2/furniture/wp-content/uploads/sites/11/2018/05/2-5-300x300.jpg",
+        productCategory: "Hot Sell"
     });
     await newProduct.save();
     console.log("Product saved to db");
