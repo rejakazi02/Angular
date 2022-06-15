@@ -60,9 +60,9 @@ const productModel = mongoose.model("product", productSchema);
 
 async function createProduct(){
     const newProduct = new productModel({
-        productTitle: "Golden Bluetooth",
-        productPrice: 1,500.00,
-        productImage: "https://demo.xpeedstudio.com/marketov2/furniture/wp-content/uploads/sites/11/2018/05/2-5-300x300.jpg",
+        productTitle: "Bluetooth Speaker",
+        productPrice: 4000.00,
+        productImage: "https://demo.xpeedstudio.com/marketov2/furniture/wp-content/uploads/sites/11/2018/08/3-1-300x300.jpg",
         productCategory: "Hot Sell"
     });
     await newProduct.save();

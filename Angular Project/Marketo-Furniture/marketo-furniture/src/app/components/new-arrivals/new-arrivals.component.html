@@ -82,31 +82,20 @@
 
           <mat-tab label="Hot Sell">
             <div class="onSellDiv">
-              <div class="productDesignDiv">
-                <img class="productImg" src="../../../assets/img/pp1.jpg" alt="">
-                <a class="product" href=""> <h2>Heavy Duty Antis</h2></a>
-                <p class="productPrice">$4,000.00</p>
+              <div class="productDesignDiv" *ngFor="let p of hotSaleProducts" >
+                <img class="productImg" [src]="p.productImage" alt="">
+                <a class="product" href=""> <h2>{{p.productTitle}}</h2></a>
+                <p class="productPrice">${{p.productPrice}}</p>
               </div>
 
-              <div class="productDesignDiv">
-                <img class="productImg" src="../../../assets/img/pp2.png" alt="">
-                <a class="product" href=""> <h2>Heavy Duty Antis</h2></a>
-                <p class="productPrice">$2,000.00</p>
-              </div>
 
-              <div class="productDesignDiv">
-                <img class="productImg" src="../../../assets/img/pp3.jpg" alt="">
-                <a class="product" href=""> <h2>Zinglo Wheel</h2></a>
-                <p class="productPrice">$3,000.00</p>
-              </div>
-
-              <div class="productDesignDiv">
-                <img class="productImg" src="../../../assets/img/ctp4.png" alt="">
-                <a class="product" href=""> <h2>Jhasu Helmet</h2></a>
-                <p class="productPrice">$3,200.00</p>
-              </div>
 
            </div>
+
+
+
+
+
           </mat-tab>
           <mat-tab label="Trend">
             <div class="onSellDiv">
