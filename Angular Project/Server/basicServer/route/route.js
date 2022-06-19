@@ -18,7 +18,7 @@ router.get("/get", (req, res) => {
 
 //   get single api
 
-router.get("/put/:id", (req, res) => {
+router.get("/getSing/:id", (req, res) => {
   if (ObjectId.isValid(req.params.id)) {
     Employee.findById(req.params.id, (err, doc) => {
       if (err) {
@@ -50,9 +50,34 @@ router.get("/put/:id", (req, res) => {
 //     });
 
 
-// delete api----------------
+// put api----------------
 
 router.get("/put/:id", (req, res) => {
+    if (ObjectId.isValid(req.params.id)) {
+
+        let emp = {
+            name: req.body.name,
+            position: req.body.position,
+            dept: req.body.dept,
+          };
+
+      Employee.findByIdAndUpdate(req.params.id, (err, doc) => {
+        if (err) {
+          console.log("Error in Update data" + err);
+        } else {
+          res.send(doc);
+          console.log("Update the Data SuccessFully");
+        }
+      });
+    } else {
+      return res.status(400).send("No data find by id" + req.params.id);
+    }
+  });
+
+
+// delete api----------------
+
+router.get("/delete/:id", (req, res) => {
     if (ObjectId.isValid(req.params.id)) {
       Employee.findByIdAndRemove(req.params.id, (err, doc) => {
         if (err) {
@@ -66,6 +91,9 @@ router.get("/put/:id", (req, res) => {
       return res.status(400).send("No data find by id" + req.params.id);
     }
   });
+
+
+
 
 // post api
 router.post("/", (req, res) => {
