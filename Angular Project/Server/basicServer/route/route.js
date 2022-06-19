@@ -25,34 +25,18 @@ router.get("/getSing/:id", (req, res) => {
         console.log("Error in post datad" + err);
       } else {
         res.send(doc);
-        console.log("put the Data SuccessFully");
+        console.log("Get single the Data SuccessFully");
       }
     });
   } else {
     return res.status(400).send("No data find by id" + req.params.id);
   }
 });
-// router.put("/put/:id", (req, res) => {
-//     Employee.findByIdAndUpdate(req.params.id, {
-//         name: req.body.name,
-//         position: req.body.position,
-//         dept: req.body.dept,
-
-//     }, (err, doc) => {
-//         if (err) {
-//           console.log("Error in post datad" + err);
-//         } else {
-//           res.send(doc);
-//           console.log("put the Data SuccessFully")
-//         }
-//     })
-
-//     });
 
 
 // put api----------------
 
-router.get("/put/:id", (req, res) => {
+router.put("/putt/:id", (req, res) => {
     if (ObjectId.isValid(req.params.id)) {
 
         let emp = {
@@ -61,7 +45,7 @@ router.get("/put/:id", (req, res) => {
             dept: req.body.dept,
           };
 
-      Employee.findByIdAndUpdate(req.params.id, (err, doc) => {
+      Employee.findByIdAndUpdate(req.params.id, {$set : emp}, {new :true}, (err, doc) => {
         if (err) {
           console.log("Error in Update data" + err);
         } else {
@@ -77,14 +61,14 @@ router.get("/put/:id", (req, res) => {
 
 // delete api----------------
 
-router.get("/delete/:id", (req, res) => {
+router.delete("/delete/:id", (req, res) => {
     if (ObjectId.isValid(req.params.id)) {
       Employee.findByIdAndRemove(req.params.id, (err, doc) => {
         if (err) {
           console.log("Error in Delete data" + err);
         } else {
           res.send(doc);
-          console.log("put the Data SuccessFully");
+          console.log("Delete the Data SuccessFully");
         }
       });
     } else {
@@ -108,6 +92,7 @@ router.post("/", (req, res) => {
       console.log("Error in post datad" + err);
     } else {
       res.send(doc);
+      console.log("Post the Data SuccessFully");
     }
   });
 });
