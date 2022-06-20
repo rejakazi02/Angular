@@ -16,8 +16,8 @@
 <div class="rowcard">
   <div class="cardcolll">
     <div class="cardmainDiv">
-      <div class="cardBody">
-        <h5>Anu</h5>
+      <div class="cardBody" *ngFor="let item of employees">
+        <h5>{{item.name}}</h5>
         <h6>Full</h6>
         <hr>
         <button>Edit</button>
