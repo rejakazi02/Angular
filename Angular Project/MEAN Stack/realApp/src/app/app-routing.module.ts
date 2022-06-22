@@ -10,7 +10,8 @@ const routes: Routes = [
   },
 {
   path : 'invoice-builder',
-  loadChildren: () => import('../app/invoice-builder/invoice-builder.module').then(mod => mod.InvoiceBuilderModule),
+  loadChildren: () => import('../app/invoice-builder/invoice-builder.module')
+  .then(mod => mod.InvoiceBuilderModule),
 
 },
 
