@@ -1,1 +1,5 @@
-npm add @angular/material @angular/cdk @angular/animations hammerjs
+1. ng add @angular/material @angular/cdk @angular/animations hammerjs
+
+2.ng g m invoice-builder --routing
+
+3. ng g c invoice-builder/invoice-builder -is -it --flat
