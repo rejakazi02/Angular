@@ -4,8 +4,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {A11yModule} from '@angular/cdk/a11y';
+import {MaterialModule} from './shared/material.module'
 
 @NgModule({
+
   declarations: [
     AppComponent
   ],
@@ -13,6 +16,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    A11yModule,
+    MaterialModule
 
   ],
   providers: [],
